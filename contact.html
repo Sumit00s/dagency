@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Talk! | Contact</title>
+
+    <!--Fontawsome Link-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!--CSS Link-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="form">
+        <h1>Let's Talk?</h1>
+        <i class="fas fa-times fa-3x"></i>
+        <p>Let’s make something awesome togheter</p>
+        
+        <form>
+
+            <div>
+             <label for="name">Your Name</label>
+             <input type="text" name="name" id="name" required>
+            </div>
+
+            <div>
+                <label for="email">Your Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div>
+                <label for="Subject">Subject</label>
+                <input type="text" name="Subject" id="Subject" required>
+            </div>
+
+            <div>
+                <label for="Subject">Your Message</label>
+                <textarea rows="10" cols="50"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!--JavaScript to redirect the page at Home Page-->
+
+    <script>
+
+        document.querySelector("i").addEventListener("click",pageRedirect);
+
+        function pageRedirect(){
+            window.location.href = "index.html";
+        }
+
+    </script>
+
+</body>
+</html>
